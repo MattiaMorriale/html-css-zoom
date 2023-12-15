@@ -9,49 +9,89 @@
     font-family: sans-serif;
 }
 
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+
+    height: 50px;
+    width: 100%;
+} 
+
+section .header-box{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+    gap: 0 7px;
+}
+
+section .header-box .btn{
+    background-color: rgba(170, 169, 169, 0.5);
+    color: white;
+
+    padding: 5px 8px;
+
+    border-radius: 5px;
+}
+section .header-box .btn:last-child{
+    margin-right: 20px;
+}
+
 /*  start main */
 
 main{
-    height: 100vh;
+    height: calc( 100vh - (80px + 50px) );
     width: 100vw;
 
     position: relative;
 
-    padding-top: 90px;
+    padding-top: 50px;
     padding-left: 80px;
     padding-right: 80px;
 
 
-    background-color: green;
+    background-color:black;
 
     overflow-y: scroll ;
 }
 
 main .main-box{
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
-    gap: 10px 5px;
+    gap: 5px 2px;
 
-    max-height: calc((140px * 5) + (10px * 4));
-
-    background-color: brown;
     
-    overflow-y: scroll ;
+
+    background-color: black;
+    
 }
+
+
+
 
 main .main-box .pane{
-    height: 140px;
-    width: calc( 100% / 7 - 5px / 7 * 6 );
+    height: 160px;
+    width: 250px;
 
-    border: 1px dashed white;
+    border:1px solid black;
 }
 
-.pane .box-img img{
+   
 
-    object-fit: cover;
+main .main-box .pane .box-img{
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
 }
+
 
 /* end main */
 
@@ -66,9 +106,7 @@ nav{
     width: 100%;
     z-index: 10;
 
-    background-color: greenyellow;
-
-    border: 5px dashed black;
+    background-color:#222222;
 }
 
 /* end nav */
