@@ -26,6 +26,8 @@ section .header-box{
     flex-grow: 1;
 
     gap: 0 7px;
+
+    
 }
 
 section .header-box .btn{
@@ -35,7 +37,10 @@ section .header-box .btn{
     padding: 5px 8px;
 
     border-radius: 5px;
+
+    cursor: pointer;
 }
+
 section .header-box .btn:last-child{
     margin-right: 20px;
 }
@@ -48,7 +53,7 @@ main{
 
     position: relative;
 
-    padding-top: 50px;
+    padding-top: 25px;
     padding-left: 80px;
     padding-right: 80px;
 
@@ -62,10 +67,11 @@ main .main-box{
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    align-content: center;
     flex-wrap: wrap;
 
-    gap: 5px 2px;
+    gap: 0 2px;
 
     
 
@@ -81,7 +87,7 @@ main .main-box .pane{
     position: relative;
 
     height: 160px;
-    width: 250px;
+    width: 220px;
 
     border:1px solid black;
 }
@@ -110,6 +116,8 @@ main .main-box .pane .box-icon{
     color: white;
 
     background-color: rgba(170, 169, 169, 0.5);
+
+    cursor: pointer;
 
 }
 
